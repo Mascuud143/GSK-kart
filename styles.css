@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  font-family: "Raleway";
+  font-size: 25px;
+  margin: 50px;
+}
+
+a {
+  border-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border-style: none;
+  text-decoration: none;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+.kol3 {
+  grid-column: span 3;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.kol9 {
+  grid-column: span 9;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 100%;
+}
+.dette-skjer-denne-uken {
+  width: 100%;
+  border-top: 0.1px solid rgb(36, 36, 36);
+  border-bottom: 0.1px solid rgb(36, 36, 36);
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  font-size: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dette-skjer-denne-uken ul {
+  color: cornflowerblue;
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.dette-skjer-denne-uken li {
+  padding: 5px;
+  font-size: 21px;
+  padding: 5px;
+  font-size: 21px;
+
+  display: flex;
+}
+
+.dette-skjer-denne-uken a {
+  color: cornflowerblue;
+}
+
+#tap-icon {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.btn-hero {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+}
+
+.buttons-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+#gskbilde {
+  width: 95%;
+}
