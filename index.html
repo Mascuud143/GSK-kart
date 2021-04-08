@@ -38,8 +38,8 @@
           </ul>
         </div>
         <div class="buttons-hero">
-          <button class="btn-hero">Finn rom</button>
-          <button class="btn-hero">Finn ansatt</button>
+          <button id="finn-rom" class="btn-hero">Finn rom</button>
+          <button id="finn-ansatt" class="btn-hero">Finn ansatt</button>
         </div>
       </div>
 
@@ -48,7 +48,28 @@
         <!-- Kart -->
         <img src="bilder/gsk2d1etg.png" id="gskbilde"" alt="" />
       </div>
+
+      <!-- finnromAvdelings modal -->
+      <div id="finnrom-modal" class="finnrom-avdeling-modal hidden">
+        <span id="close-modal">&times;</span>
+        <div class="header">
+          <h3>Velg avdeling eller Møterom</h3>
+          <button id="moterom-btn">Møterom</button>
+        </div>
+        <div class="avdelinger">
+          <img src="/bilder/mkglogo.jpg" alt="mkglogo" />
+          <img src="/bilder/gauldalvgslogo.jpg" alt="gauldalvgslogo" />
+          <img
+            src="/bilder/storenkulturhuslogo.jpg"
+            alt="storenkulturhuslogo"
+          />
+        </div>
+      </div>
+
+      <!-- background-drop -->
+      <div id="back-drop" class="background-drop hidden"></div>
     </div>
-    <script src="script.js"></script>
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>
