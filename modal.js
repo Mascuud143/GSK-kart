@@ -37,6 +37,20 @@ const modal = {
       alt="storenkulturhuslogo"
     />
   </div>`,
+
+  ansattetemplate: ` <span class="close-modal" id="close-modal">&times;</span>
+  <div class="header">
+    <h3>Velg avdeling</h3>
+    <button id="moterom-btn">Tilforside</button>
+  </div>
+  <div class="avdelinger">
+    <img  src="/bilder/mkglogo.jpg" alt="mkglogo" />
+    <img id="gvgs-btn" src="/bilder/gauldalvgslogo.jpg" alt="gauldalvgslogo" />
+    <img
+      src="/bilder/storenkulturhuslogo.jpg"
+      alt="storenkulturhuslogo"
+    />
+  </div>`,
 };
 
 export default modal;

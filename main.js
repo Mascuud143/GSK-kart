@@ -2,13 +2,16 @@ import modal from "./modal.js";
 import { rom, rooms } from "./room.js";
 
 // Top level
-let gvgsModalIsOpened = false;
+const herskaDu = document.querySelector(".her-skal-du");
 
 // At refresh, this happens
 function init() {
   // Hide all the points
   const allPoints = document.querySelectorAll(".point");
-  allPoints.forEach((point) => point.classList.add("hidden"));
+  //   allPoints.forEach((point) => point.classList.add("hidden"));
+
+  //   Hide her skal du circle
+  herskaDu.style.display = "none";
 }
 
 //Select elements
@@ -29,6 +32,7 @@ window.addEventListener("load", () => {
 });
 
 finnRomBtn.addEventListener("click", openFinnRomModal);
+finnAnsattBtn.addEventListener("click", openAnsatteModal);
 romModal.addEventListener("click", closeAvdelingRomModal);
 backdrop.addEventListener("click", closeAvdelingRomModal);
 
@@ -36,6 +40,10 @@ backdrop.addEventListener("click", closeAvdelingRomModal);
 //Functions
 function openFinnRomModal() {
   renderAvdelingRomModal();
+}
+
+function openAnsatteModal() {
+  renderAnsatteModal();
 }
 
 function closeAvdelingRomModal(e) {
@@ -53,10 +61,28 @@ function closeAvdelingRomModal(e) {
 }
 
 function renderAvdelingRomModal() {
+  // Make sure we clear out point before modal is re-opened
+  const allPoints = document.querySelectorAll(".point");
+  allPoints.forEach((point) => {
+    const classes = [...point.classList];
+
+    if (!classes.includes("hidden")) point.classList.add("hidden");
+  });
+
   // Make shure there is no html content inside
   romModal.innerHTML = "";
 
   romModal.insertAdjacentHTML("afterbegin", modal.avdelingRomtemplate);
+  romModal.classList.toggle("hidden");
+  backdrop.classList.remove("hidden");
+  const gvgsBtn = document.querySelector("#gvgs-btn");
+  gvgsBtn.addEventListener("click", renderRomGvgs);
+}
+function renderAnsatteModal() {
+  // Make shure there is no html content inside
+  romModal.innerHTML = "";
+
+  romModal.insertAdjacentHTML("afterbegin", modal.ansattetemplate);
   romModal.classList.toggle("hidden");
   backdrop.classList.remove("hidden");
   const gvgsBtn = document.querySelector("#gvgs-btn");
@@ -96,6 +122,8 @@ function showRoom(e) {
   // from the selected room , we crrate a new rom class
   const newRoom = new rom(roomSelected, rooms[roomSelected]);
   newRoom.show();
+  //   Hide modal
   romModal.classList.add("hidden");
   backdrop.classList.add("hidden");
+  herskaDu.style.display = "flex";
 }

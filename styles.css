@@ -265,6 +265,23 @@ hr {
   margin-bottom: 20px;
 }
 
+.her-skal-du {
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+  left: 50px;
+  width: 140px;
+}
+
+.her-skal-du-circle {
+  background-color: #9bc53d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 #her-navigator {
   position: absolute;
   bottom: 210px;
@@ -307,7 +324,7 @@ hr {
 }
 
 #B106 {
-  top: 310px;
+  top: 330px;
   right: 295px;
 }
 
@@ -334,4 +351,79 @@ hr {
 #B119 {
   top: 580px;
   right: 260px;
+}
+
+#C101 {
+  top: 160px;
+  right: 460px;
+}
+
+#C102 {
+  top: 160px;
+  right: 525px;
+}
+
+#C103 {
+  top: 220px;
+  right: 525px;
+}
+
+#C104 {
+  top: 280px;
+  right: 525px;
+}
+#C106 {
+  top: 340px;
+  right: 525px;
+}
+
+#C105 {
+  top: 340px;
+  right: 460px;
+}
+
+#C120 {
+  top: 240px;
+  right: 620px;
+}
+
+/* Block A */
+#A101 {
+  top: 50px;
+  right: 50px;
+}
+
+#A110 {
+  top: 250px;
+  right: 50px;
+}
+
+#A117 {
+  top: 510px;
+  right: 70px;
+}
+
+#A116 {
+  top: 510px;
+  right: 20px;
+}
+
+#D102 {
+  top: 160px;
+  right: 780px;
+}
+
+#D105 {
+  top: 200px;
+  right: 780px;
+}
+
+#D111 {
+  top: 300px;
+  right: 780px;
+}
+
+#D121 {
+  top: 590px;
+  right: 740px;
 }
