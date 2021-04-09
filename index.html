@@ -46,28 +46,35 @@
       <!-- Main -->
       <div class="kol9">
         <!-- Kart -->
-        <img src="bilder/gsk2d1etg.png" id="gskbilde"" alt="" />
+        <img style="pointer-events: none" src="bilder/gsk2d1etg.png"
+        id="gskbilde"" alt="" />
       </div>
 
       <!-- finnromAvdelings modal -->
-      <div id="finnrom-modal" class="finnrom-avdeling-modal hidden">
-        <span id="close-modal">&times;</span>
-        <div class="header">
-          <h3>Velg avdeling eller Møterom</h3>
-          <button id="moterom-btn">Møterom</button>
-        </div>
-        <div class="avdelinger">
-          <img src="/bilder/mkglogo.jpg" alt="mkglogo" />
-          <img src="/bilder/gauldalvgslogo.jpg" alt="gauldalvgslogo" />
-          <img
-            src="/bilder/storenkulturhuslogo.jpg"
-            alt="storenkulturhuslogo"
-          />
-        </div>
-      </div>
+      <div id="finnrom-modal" class="finnrom-avdeling-modal hidden"></div>
 
       <!-- background-drop -->
       <div id="back-drop" class="background-drop hidden"></div>
+
+      <!-- Her star du -->
+      <div class="bane">
+        <div class="current-location">
+          <div class="her-star-du"></div>
+          <span class="Her-star-du-label">Her står du nå </span>
+        </div>
+
+        <div id="her-navigator" class="her-star-du"></div>
+
+        <div class="rooms">
+          <div class="point B101" id="B101"></div>
+          <div class="point B101" id="B102"></div>
+          <div class="point B101" id="B103"></div>
+          <div class="point B101" id="B104"></div>
+          <div class="point B101" id="B105"></div>
+          <div class="point B101" id="B106"></div>
+          <div class="point B101" id="B107"></div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="main.js"></script>

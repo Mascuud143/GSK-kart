@@ -128,7 +128,7 @@ hr {
   font-size: 21px;
   z-index: 4;
   width: 89%;
-  height: 70%;
+  min-height: 70%;
   margin: auto;
   padding: 10px;
   border-radius: 50px;
@@ -197,4 +197,84 @@ hr {
   border-radius: 5px;
   margin-top: 10px;
   margin-left: 50px;
+}
+
+/* Gvgs MOdal */
+
+.rooms button {
+  background-color: #fade29;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#go-tilavdeling-btn {
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 90px;
+  width: 150px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+}
+
+#gvgs-rom-logo {
+  height: 100px;
+}
+
+/* Directions */
+
+.bane {
+  position: absolute;
+  left: 500px;
+  width: 50%;
+  /* background-color: red;  */
+  /* border: 2px solid red; */
+  width: 1250px;
+  height: 800px;
+  margin: auto;
+}
+
+.current-location {
+  width: 200px;
+  height: 50px;
+
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+
+  display: flex;
+  align-content: center;
+}
+
+.her-star-du {
+  position: absolute;
+  background-color: #fde74c;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.Her-star-du-label {
+  font-size: 20px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+#her-navigator {
+  position: absolute;
+  bottom: 210px;
+  left: 410px;
+}
+
+.point {
+  position: absolute;
+  background-color: #9bc53d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
