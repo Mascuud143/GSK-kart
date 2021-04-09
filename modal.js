@@ -5,22 +5,22 @@ const modal = {
 <div>
 <img id="gvgs-rom-logo" src="/bilder//gauldalvgslogo.jpg" alt="gauldalvgslogo" />
 </div>
-<div class="rooms">
-<button class="room-100">B101</button>
-<button class="room-100">B102</button>
-<button class="room-100">B103</button>
-<button class="room-100">B104</button>
-<button class="room-100">B105</button>
-<button class="room-100">B106</button>
-<button class="room-100">B107</button>
+<div class="rooms-gvgs">
+<button class="room-gvgs">B101</button>
+<button class="room-gvgs">B102</button>
+<button class="room-gvgs">B103</button>
+<button class="room-gvgs">B104</button>
+<button class="room-gvgs">B105</button>
+<button class="room-gvgs">B106</button>
+<button class="room-gvgs">B107</button>
 
-<button class="room-100">B202</button>
-<button class="room-100">B201</button>
-<button class="room-100">B203</button>
-<button class="room-100">B204</button>
-<button class="room-100">B205</button>
-<button class="room-100">B206</button>
-<button class="room-100">B207</button>
+<button class="room-gvgs">B202</button>
+<button class="room-gvgs">B201</button>
+<button class="room-gvgs">B203</button>
+<button class="room-gvgs">B204</button>
+<button class="room-gvgs">B205</button>
+<button class="room-gvgs">B206</button>
+<button class="room-gvgs">B207</button>
 
 </div>`,
 

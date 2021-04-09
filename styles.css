@@ -201,7 +201,7 @@ hr {
 
 /* Gvgs MOdal */
 
-.rooms button {
+.room-gvgs {
   background-color: #fade29;
   padding: 10px;
   width: 150px;
@@ -277,4 +277,61 @@ hr {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+/* ROOM  CIRCLES */
+
+#B101 {
+  top: 90px;
+  right: 230px;
+}
+
+#B102 {
+  top: 90px;
+  right: 295px;
+}
+
+#B103 {
+  top: 140px;
+  right: 295px;
+}
+
+#B104 {
+  top: 190px;
+  right: 295px;
+}
+
+#B105 {
+  top: 240px;
+  right: 295px;
+}
+
+#B106 {
+  top: 310px;
+  right: 295px;
+}
+
+#B107 {
+  top: 290px;
+  right: 250px;
+}
+
+#B124 {
+  top: 450px;
+  right: 340px;
+}
+
+#B123 {
+  top: 450px;
+  right: 400px;
+}
+
+#B117 {
+  top: 500px;
+  right: 280px;
+}
+
+#B119 {
+  top: 580px;
+  right: 260px;
 }
