@@ -63,6 +63,15 @@ hr {
 #logo {
   width: 100%;
 }
+
+.tilbakestill-visning button {
+  background-color: #ff6b6b;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+}
+
 .dette-skjer-denne-uken {
   width: 100%;
   border-top: 0.1px solid rgb(36, 36, 36);
@@ -152,9 +161,8 @@ hr {
   font-weight: 100;
   align-content: center;
   align-content: center;
-
   margin-top: -70px;
-
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,20 +203,35 @@ hr {
   height: 100px;
   width: 200px;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: 50px;
 }
 
 /* Gvgs MOdal */
 
-.room-gvgs {
-  background-color: #fade29;
+.room {
   padding: 10px;
-  width: 150px;
+  min-width: 150px;
   height: 50px;
   font-size: 20px;
   border-radius: 10px;
   margin: 30px;
+}
+
+.room-gvgs {
+  background-color: #fde74c;
+}
+
+.room-mgc {
+  background-color: #9bc53d;
+}
+
+.room-sk {
+  background-color: #f6a149;
+}
+
+.room-mote {
+  background-color: #fde74c;
 }
 
 #go-tilavdeling-btn {
@@ -219,7 +242,8 @@ hr {
   width: 150px;
   border-radius: 5px;
   position: absolute;
-  top: 10px;
+  top: 100px;
+  left: 150px;
 }
 
 #gvgs-rom-logo {
@@ -270,15 +294,18 @@ hr {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  bottom: 0px;
+  bottom: -40px;
   left: 50px;
-  width: 140px;
+  min-width: 200px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #9bc53d;
+  padding: 10px;
 }
 
-.her-skal-du-circle {
-  background-color: #9bc53d;
-  width: 20px;
-  height: 20px;
+.her-skal-du span {
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
 
@@ -290,140 +317,53 @@ hr {
 
 .point {
   position: absolute;
+  top: 300px;
+  right: 750px;
   background-color: #9bc53d;
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
-/* ROOM  CIRCLES */
+/* 
+2.etg
 
-#B101 {
-  top: 90px;
-  right: 230px;
-}
 
-#B102 {
-  top: 90px;
-  right: 295px;
-}
+D202:{
+  top: "150px";
+  right: "800px";
+},
 
-#B103 {
-  top: 140px;
-  right: 295px;
-}
+D201:{
+  top: "150px";
+  right: "720px";
+},
 
-#B104 {
-  top: 190px;
-  right: 295px;
-}
 
-#B105 {
-  top: 240px;
-  right: 295px;
-}
+D203:{
+  top: "200px";
+  right: "800px";
+},
 
-#B106 {
-  top: 330px;
-  right: 295px;
-}
+D204:{
+  top: "250px";
+  right: "800px";
+},
 
-#B107 {
-  top: 290px;
-  right: 250px;
-}
+D214:{
+  top: "300px";
+  right: "800px";
+},
 
-#B124 {
-  top: 450px;
-  right: 340px;
-}
 
-#B123 {
-  top: 450px;
-  right: 400px;
-}
+D212:{
+  top: "300px";
+  right: "770px";
+},
 
-#B117 {
-  top: 500px;
-  right: 280px;
-}
+D212:{
+  top: "300px";
+  right: "770px";
+},
 
-#B119 {
-  top: 580px;
-  right: 260px;
-}
-
-#C101 {
-  top: 160px;
-  right: 460px;
-}
-
-#C102 {
-  top: 160px;
-  right: 525px;
-}
-
-#C103 {
-  top: 220px;
-  right: 525px;
-}
-
-#C104 {
-  top: 280px;
-  right: 525px;
-}
-#C106 {
-  top: 340px;
-  right: 525px;
-}
-
-#C105 {
-  top: 340px;
-  right: 460px;
-}
-
-#C120 {
-  top: 240px;
-  right: 620px;
-}
-
-/* Block A */
-#A101 {
-  top: 50px;
-  right: 50px;
-}
-
-#A110 {
-  top: 250px;
-  right: 50px;
-}
-
-#A117 {
-  top: 510px;
-  right: 70px;
-}
-
-#A116 {
-  top: 510px;
-  right: 20px;
-}
-
-#D102 {
-  top: 160px;
-  right: 780px;
-}
-
-#D105 {
-  top: 200px;
-  right: 780px;
-}
-
-#D111 {
-  top: 300px;
-  right: 780px;
-}
-
-#D121 {
-  top: 590px;
-  right: 740px;
-}
+*/

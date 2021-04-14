@@ -8,6 +8,7 @@
     <title>Infoskjerm GSK</title>
   </head>
   <body>
+    <!-- Reset knappe -->
     <div class="app">
       <!-- Side bar -->
       <div class="kol3">
@@ -18,7 +19,9 @@
             alt="gsk-10årutenfireworkstrasnparent"
           />
         </div>
-
+        <div class="tilbakestill-visning">
+          <button>Tilbakestill visning</button>
+        </div>
         <!-- Dette skjer denne uken -->
         <div class="dette-skjer-denne-uken">
           <h2>Dette skjer denne uken</h2>
@@ -56,54 +59,21 @@
       <!-- background-drop -->
       <div id="back-drop" class="background-drop hidden"></div>
 
-      <!-- Her star du -->
+      <!-- The navigation area -->
       <div class="bane">
         <div class="current-location">
           <div class="her-star-du"></div>
           <span class="Her-star-du-label">Her står du nå </span>
         </div>
+
         <div class="her-skal-du">
-          <div class="her-skal-du-circle"></div>
-          <span>Her skal du</span>
+          <span></span>
         </div>
 
         <div id="her-navigator" class="her-star-du"></div>
 
-        <div class="rooms">
-          <!-- GVGS -->
-          <div class="point" id="B101"></div>
-          <div class="point" id="B102"></div>
-          <div class="point" id="B103"></div>
-          <div class="point" id="B104"></div>
-          <div class="point" id="B105"></div>
-          <div class="point" id="B106"></div>
-          <div class="point" id="B107"></div>
-          <div class="point" id="B124"></div>
-          <div class="point" id="B123"></div>
-          <div class="point" id="B117"></div>
-          <div class="point" id="B119"></div>
-
-          <!-- MGK -->
-          <div class="point" id="C101"></div>
-          <div class="point" id="C102"></div>
-          <div class="point" id="C103"></div>
-          <div class="point" id="C104"></div>
-          <div class="point" id="C105"></div>
-          <div class="point" id="C106"></div>
-          <div class="point" id="C120"></div>
-
-          <!-- A -->
-          <div class="point" id="A101"></div>
-          <div class="point" id="A110"></div>
-          <div class="point" id="A117"></div>
-          <div class="point" id="A116"></div>
-
-          <!-- D ? -->
-          <div class="point" id="D102"></div>
-          <div class="point" id="D105"></div>
-          <div class="point" id="D111"></div>
-          <div class="point" id="D121"></div>
-        </div>
+        <!-- Point -->
+        <div class="point hidden"></div>
       </div>
     </div>
 

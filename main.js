@@ -3,15 +3,12 @@ import { rom, rooms } from "./room.js";
 
 // Top level
 const herskaDu = document.querySelector(".her-skal-du");
+const tilbakestilling = document.querySelector(".tilbakestill-visning");
 
 // At refresh, this happens
 function init() {
-  // Hide all the points
-  const allPoints = document.querySelectorAll(".point");
-  //   allPoints.forEach((point) => point.classList.add("hidden"));
-
-  //   Hide her skal du circle
   herskaDu.style.display = "none";
+  document.querySelector(".point").classList.add("hidden");
 }
 
 //Select elements
@@ -26,11 +23,9 @@ const backdrop = document.querySelector("#back-drop");
 
 ////////////////////////////////
 // EvenstListners
-
 window.addEventListener("load", () => {
   init();
 });
-
 finnRomBtn.addEventListener("click", openFinnRomModal);
 finnAnsattBtn.addEventListener("click", openAnsatteModal);
 romModal.addEventListener("click", closeAvdelingRomModal);
@@ -62,12 +57,6 @@ function closeAvdelingRomModal(e) {
 
 function renderAvdelingRomModal() {
   // Make sure we clear out point before modal is re-opened
-  const allPoints = document.querySelectorAll(".point");
-  allPoints.forEach((point) => {
-    const classes = [...point.classList];
-
-    if (!classes.includes("hidden")) point.classList.add("hidden");
-  });
 
   // Make shure there is no html content inside
   romModal.innerHTML = "";
@@ -75,8 +64,30 @@ function renderAvdelingRomModal() {
   romModal.insertAdjacentHTML("afterbegin", modal.avdelingRomtemplate);
   romModal.classList.toggle("hidden");
   backdrop.classList.remove("hidden");
+  //   GVGS modal
   const gvgsBtn = document.querySelector("#gvgs-btn");
-  gvgsBtn.addEventListener("click", renderRomGvgs);
+  gvgsBtn.addEventListener("click", () => {
+    renderRomModal(modal.gvgsModalTemplate, ".room-gvgs");
+  });
+
+  // MCG Modal
+  const mcgBtn = document.querySelector("#mgc-btn");
+  mcgBtn.addEventListener("click", () => {
+    console.log("iolo");
+    renderRomModal(modal.midtreGTemplate, ".room-mgc");
+  });
+
+  // Sk Modal
+  const skBtn = document.querySelector("#sk-btn");
+  skBtn.addEventListener("click", () => {
+    renderRomModal(modal.skTemplate, ".room-sk");
+  });
+
+  // Mote modal
+  const moteBtn = document.querySelector("#moterom-btn");
+  moteBtn.addEventListener("click", () => {
+    renderRomModal(modal.moteTemplate, ".room-mote");
+  });
 }
 function renderAnsatteModal() {
   // Make shure there is no html content inside
@@ -85,28 +96,26 @@ function renderAnsatteModal() {
   romModal.insertAdjacentHTML("afterbegin", modal.ansattetemplate);
   romModal.classList.toggle("hidden");
   backdrop.classList.remove("hidden");
-  const gvgsBtn = document.querySelector("#gvgs-btn");
-  gvgsBtn.addEventListener("click", renderRomGvgs);
 }
 
-function renderRomGvgs() {
+function renderRomModal(modale, rooms) {
   romModal.innerHTML = "";
-  romModal.insertAdjacentHTML("afterbegin", modal.gvgsModalTemplate);
+  romModal.insertAdjacentHTML("afterbegin", modale);
   //   Listening click for all rooms for gvgs
-  const gvgsRooms = document.querySelectorAll(".room-gvgs");
-  console.log(gvgsRooms);
+  const gvgsRooms = document.querySelectorAll(`${rooms}`);
   gvgsRooms.forEach((room) => {
     room.addEventListener("click", showRoom);
   });
 
-  const tilbakeTilAvdeling = document.querySelector("#go-tilavdeling-btn");
-  tilbakeTilAvdeling.addEventListener("click", () => {
-    romModal.innerHTML = "";
-    romModal.insertAdjacentHTML("afterbegin", modal.avdelingRomtemplate);
-  });
+  document
+    .querySelector("#go-tilavdeling-btn")
+    .addEventListener("click", () => {
+      renderAvdelingRomModal();
+      romModal.classList.remove("hidden");
+    });
 }
 
-//Runs whenever room is selected
+//Runs whenever a room btn is clicked
 function showRoom(e) {
   const room = e.target.textContent;
 
@@ -126,4 +135,8 @@ function showRoom(e) {
   romModal.classList.add("hidden");
   backdrop.classList.add("hidden");
   herskaDu.style.display = "flex";
+
+  herskaDu.textContent = `${roomSelected} ligger i ${
+    roomSelected[1] == "1" ? "1" : "2"
+  }.etg`;
 }
