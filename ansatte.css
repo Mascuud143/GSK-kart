@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  position: relative;
+
+  font-family: "Raleway", sans-serif;
+}
+
+.head {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.head img {
+  width: 30%;
+}
+
+.head button {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+}
+
+.ledelsen {
+  font-family: "Raleway";
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#ansatt {
+  grid-column: span 2;
+  margin: 0 auto;
+  margin: 50px;
+  font-size: 15px;
+}
+
+#ansatt > * {
+  margin: 0;
+  padding: 0;
+}
+
+#ansatt h2 {
+  font-weight: 100;
+}
+
+#ansatt-room {
+  font-weight: 100;
+  cursor: pointer;
+}

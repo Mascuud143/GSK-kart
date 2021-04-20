@@ -1,9 +1,43 @@
 import modal from "./modal.js";
 import { rom, rooms } from "./room.js";
+import detteSkjerTemplate from "./detteskjerdenneuken.js";
 
 // Top level
+
+// Render detteskjer denne uken
+const detteSKjerContainer = document.querySelector("#detteSKjer");
+
+detteSKjerContainer.insertAdjacentHTML("afterbegin", detteSkjerTemplate);
+
+//Select elements
+// knapper
+const finnRomBtn = document.querySelector("#finn-rom");
+const finnAnsattBtn = document.querySelector("#finn-ansatt");
+const closeFinnRomModalBtn = document.querySelector("#close-modal");
+const tilbakestill = document.querySelector(".tilbakestill-visning");
+const detteSkjerBtn = document.querySelectorAll("#detteSkjer-btn");
+
+// modal
+const romModal = document.querySelector("#finnrom-modal");
+const backdrop = document.querySelector("#back-drop");
+
 const herskaDu = document.querySelector(".her-skal-du");
-const tilbakestilling = document.querySelector(".tilbakestill-visning");
+////////////////////////////////
+// EvenstListners
+window.addEventListener("load", () => {
+  init();
+});
+
+// ["onmousemove", "onkeypress "].forEach((e) =>
+//   // window.addEventListener(e, idleCounter)
+// );
+
+finnRomBtn.addEventListener("click", renderAvdelingRomModal);
+finnAnsattBtn.addEventListener("click", renderAnsatteModal);
+romModal.addEventListener("click", closeAvdelingModal);
+backdrop.addEventListener("click", closeAvdelingModal);
+detteSkjerBtn.forEach((btn) => btn.addEventListener("click", showRoom));
+/////////////////////////////////
 
 // At refresh, this happens
 function init() {
@@ -11,44 +45,17 @@ function init() {
   document.querySelector(".point").classList.add("hidden");
 }
 
-//Select elements
-// knapper
-const finnRomBtn = document.querySelector("#finn-rom");
-const finnAnsattBtn = document.querySelector("#finn-ansatt");
-const closeFinnRomModalBtn = document.querySelector("#close-modal");
-
-// modal
-const romModal = document.querySelector("#finnrom-modal");
-const backdrop = document.querySelector("#back-drop");
-
-////////////////////////////////
-// EvenstListners
-window.addEventListener("load", () => {
-  init();
-});
-finnRomBtn.addEventListener("click", openFinnRomModal);
-finnAnsattBtn.addEventListener("click", openAnsatteModal);
-romModal.addEventListener("click", closeAvdelingRomModal);
-backdrop.addEventListener("click", closeAvdelingRomModal);
-
-/////////////////////////////////
 //Functions
-function openFinnRomModal() {
-  renderAvdelingRomModal();
-}
 
-function openAnsatteModal() {
-  renderAnsatteModal();
-}
-
-function closeAvdelingRomModal(e) {
+function closeAvdelingModal(e) {
   // Make sure the modal does not close, but only if the close X button  || backdrop is clicked
   const classes = [...e.target.classList];
 
   if (
     classes.includes("background-drop") ||
     classes.includes("close-modal") ||
-    classes.includes("room-gvgs")
+    classes.includes("room-gvgs") ||
+    classes.includes("finnansatte-btn")
   ) {
     romModal.classList.add("hidden");
     backdrop.classList.add("hidden");
@@ -56,8 +63,6 @@ function closeAvdelingRomModal(e) {
 }
 
 function renderAvdelingRomModal() {
-  // Make sure we clear out point before modal is re-opened
-
   // Make shure there is no html content inside
   romModal.innerHTML = "";
 
@@ -94,8 +99,30 @@ function renderAnsatteModal() {
   romModal.innerHTML = "";
 
   romModal.insertAdjacentHTML("afterbegin", modal.ansattetemplate);
-  romModal.classList.toggle("hidden");
+
+  const finnansatteBtn = document.querySelector("#finnansatte-btn");
+
+  finnansatteBtn.addEventListener("click", closeAvdelingModal);
+
+  romModal.classList.remove("hidden");
   backdrop.classList.remove("hidden");
+
+  const gvgsBtn = document.querySelector("#gvgs-btn");
+  gvgsBtn.addEventListener("click", () => {
+    window.location.href = "/ansattgvs.html";
+  });
+
+  // MCGansatte
+  const mcgBtn = document.querySelector("#mgc-btn");
+  mcgBtn.addEventListener("click", () => {
+    window.location.href = "/ansattstus.html";
+  });
+
+  // Sk ansatte
+  const skBtn = document.querySelector("#sk-btn");
+  skBtn.addEventListener("click", () => {
+    window.location.href = "/ansattkhus.html";
+  });
 }
 
 function renderRomModal(modale, rooms) {
@@ -117,8 +144,7 @@ function renderRomModal(modale, rooms) {
 
 //Runs whenever a room btn is clicked
 function showRoom(e) {
-  const room = e.target.textContent;
-
+  const room = e.target.getAttribute("room") || e.target.textContent;
   let roomSelected;
 
   for (let rom in rooms) {
@@ -139,4 +165,7 @@ function showRoom(e) {
   herskaDu.textContent = `${roomSelected} ligger i ${
     roomSelected[1] == "1" ? "1" : "2"
   }.etg`;
+
+  tilbakestill.classList.remove("hidden");
+  tilbakestill.addEventListener("click", () => location.reload());
 }

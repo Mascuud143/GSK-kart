@@ -1,0 +1,912 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  font-family: "Raleway";
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 50px;
+}
+
+.kol12 {
+  grid-column: span 12;
+  margin: 0 auto;
+}
+.kol9 {
+  grid-column: span 9;
+  margin: 0 auto;
+}
+#kol9her {
+  grid-column: span 9;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 700px;
+}
+.kol4 {
+  grid-column: span 4;
+  margin: 0 auto;
+}
+.kol3 {
+  grid-column: span 3;
+  margin: 0 auto;
+}
+.kol2 {
+  grid-column: span 2;
+  margin: 0 auto;
+  margin: 50px;
+  font-size: 25px;
+}
+
+/*diverse enkelt elemeter under her*/
+
+#velkomsttekst {
+  margin-top: 100px;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+#gskbilde {
+  width: 95%;
+}
+
+#navigasjonsbane {
+  position: absolute;
+  margin-left: -60%;
+}
+
+#tilbakestill {
+  visibility: hidden;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #ff6b6b;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#generalmessages {
+  grid-column: span 12;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.skjeridag {
+  color: cornflowerblue;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 30px;
+}
+
+li {
+  padding: 5px;
+  font-size: 21px;
+}
+
+.taphere {
+  width: 6%;
+}
+#circle {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #fde74c;
+  position: absolute;
+  margin-left: 875px;
+  margin-top: 560px;
+}
+
+#circlehere {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #fde74c;
+  position: absolute;
+  margin-left: 570px;
+  margin-top: 705px;
+}
+
+#tilbakelenke {
+  text-decoration: none;
+  color: black;
+  grid-column: span 6;
+  margin: 0 auto;
+}
+
+#finnansatt {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+  border-style: none;
+  display: inline-block;
+}
+
+#tilbake {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+  border-style: none;
+  display: inline-block;
+}
+
+#openmoterom {
+  border-radius: 5px;
+  margin: 1%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+  border-style: none;
+}
+
+#velgetgtekst {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 510px;
+}
+
+#velg1etg {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  margin-left: 450px;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  border-style: none;
+}
+
+#velg2etg {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  margin-left: 600px;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  border-style: none;
+}
+/* 
+.roomtext {
+  font-size: 12px;
+  margin: ;
+} */
+
+/*styling for tilbakeavdelinger sine knapper*/
+#tilbakeavdelinger {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+  border-style: none;
+}
+
+#tilbakeavdelinger2 {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+  border-style: none;
+}
+
+#tilbakeavdelinger3 {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+  border-style: none;
+}
+
+#finnrom {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+  border-style: none;
+}
+
+.moterom {
+  width: 10%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #fade29;
+  border: none;
+  margin: 1%;
+  border-radius: 50px;
+}
+
+.romgvs {
+  width: 10%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #fade29;
+  border: none;
+  margin: 2%;
+  border-radius: 50px;
+}
+
+.rommgk {
+  width: 10%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #00a756;
+  border: none;
+  margin: 1%;
+  border-radius: 50px;
+}
+
+.meny {
+  display: inline-block;
+}
+
+.forsidelogo {
+  width: 30%;
+  grid-column: span 12;
+  margin: 0 auto;
+}
+
+h3 {
+  grid-column: span 2;
+}
+
+#storenuskole {
+  margin-top: 20%;
+}
+
+#storenuskolelogo {
+  width: 80%;
+}
+
+#gauldalvgs {
+  margin-top: 20%;
+}
+#gauldalvgslogo {
+  width: 100%;
+}
+
+#kulturhuset {
+  margin-top: 20%;
+}
+#storenkhuslogo {
+  width: 60%;
+}
+
+/*egne innstillinger på forsiden for samme bilder*/
+#storenkhuslogoforside {
+  width: 15%;
+  margin: 5%;
+}
+
+#gauldalvgslogoforside {
+  width: 30%;
+  margin: 5%;
+}
+
+#gauldallogo {
+  width: 30%;
+  margin: 1%;
+}
+
+#storenuskolelogoforside {
+  width: 20%;
+  margin: 5%;
+}
+
+/*modal boks for forside*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 50px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 48px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#close {
+  color: black;
+  float: right;
+  font-size: 80px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Alle navigatører kommer her */
+
+/*GVS*/
+
+#circleb101 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1350px;
+  margin-top: 90px;
+}
+
+#circleb101zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1160px;
+  margin-top: 90px;
+}
+
+#circleb102 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 90px;
+}
+
+#circleb102zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1035px;
+  margin-top: 85px;
+}
+
+#circleb103 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 135px;
+}
+
+#circleb103zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 235px;
+}
+
+#circleb104 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 200px;
+}
+
+#circleb104zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 380px;
+}
+
+#circleb105 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 250px;
+}
+
+#circleb105zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 550px;
+}
+
+#circleb106 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 295px;
+}
+
+#circleb106zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1005px;
+  margin-top: 665px;
+}
+
+#circleb107 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1340px;
+  margin-top: 295px;
+}
+
+#circleb107zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1095px;
+  margin-top: 665px;
+}
+#circlea115 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1350px;
+  margin-top: 90px;
+}
+
+#circlea115zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1160px;
+  margin-top: 90px;
+}
+
+#circlea116 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 90px;
+}
+
+#circlea116zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1035px;
+  margin-top: 85px;
+}
+
+#circleb117 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 135px;
+}
+
+#circleb117zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 235px;
+}
+
+#circleb118 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 200px;
+}
+
+#circleb118zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 380px;
+}
+
+#circleb119 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 250px;
+}
+
+#circleb119zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 550px;
+}
+#circleb201 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1350px;
+  margin-top: 90px;
+}
+
+#circleb201zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1160px;
+  margin-top: 90px;
+}
+
+#circleb202 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 90px;
+}
+
+#circleb202zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1035px;
+  margin-top: 85px;
+}
+
+#circleb203 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 135px;
+}
+
+#circleb203zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 235px;
+}
+
+#circleb204 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 200px;
+}
+
+#circleb204zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 380px;
+}
+
+#circleb205 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 250px;
+}
+
+#circleb205zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1015px;
+  margin-top: 550px;
+}
+
+#circleb206 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1310px;
+  margin-top: 295px;
+}
+
+#circleb206zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1005px;
+  margin-top: 665px;
+}
+
+#circleb207 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1340px;
+  margin-top: 295px;
+}
+
+#circleb207zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1095px;
+  margin-top: 665px;
+}
+
+/*MGK*/
+
+/*Khus*/
+
+/*Møterom*/
+#circlec246 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1070px;
+  margin-top: 410px;
+}
+
+#c246zoom {
+  display: none;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #9bc53d;
+  position: absolute;
+  margin-left: 1610px;
+  margin-top: 130px;
+}

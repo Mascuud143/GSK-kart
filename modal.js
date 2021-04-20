@@ -42,12 +42,12 @@ const modal = {
   ansattetemplate: ` <span class="close-modal" id="close-modal">&times;</span>
   <div class="header">
     <h3>Velg avdeling</h3>
-    <button id="moterom-btn">Tilforside</button>
+    <button class="finnansatte-btn" id="finnansatte-btn">Tilforside</button>
   </div>
   <div class="avdelinger">
-    <img  src="/bilder/mkglogo.jpg" alt="mkglogo" />
-    <img id="gvgs-btn" src="/bilder/gauldalvgslogo.jpg" alt="gauldalvgslogo" />
-    <img
+    <img id="mgc-btn" src="/bilder/mkglogo.jpg" alt="mkglogo" />
+    <img id="gvgs-btn" id="gvgs-btn" src="/bilder/gauldalvgslogo.jpg" alt="gauldalvgslogo" />
+    <img id="sk-btn"
       src="/bilder/storenkulturhuslogo.jpg"
       alt="storenkulturhuslogo"
     />
@@ -101,3 +101,27 @@ const modal = {
 };
 
 export default modal;
+
+// for (let qool in rooms) {
+//   if (qool[1] == "1") {
+//     console.log(rooms[qool]);
+//     const qol = new rom(qool, rooms[qool]);
+//     const div = document.createElement("div");
+//     div.style.backgroundColor = "red";
+//     div.style.width = "25px";
+//     div.style.height = "25px";
+//     div.style.borderRadius = "25px";
+//     div.style.position = "absolute";
+//     const r = Number(rooms[qool].right.slice(0, -2)) - 6;
+//     const t = Number(rooms[qool].top.slice(0, -2)) - 10;
+
+//     div.style.right = `${r}px`;
+//     div.style.top = `${t}px`;
+
+//     //h
+//     // div.style.right = rooms[qool].right;
+//     // div.style.top = rooms[qool].top;
+//     document.querySelector(".bane").appendChild(div);
+//     qol.show();
+//   }
+// }

@@ -1,0 +1,22 @@
+{
+  "name": "gsk-kart2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mascuud143/GSK-kart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mascuud143/GSK-kart/issues"
+  },
+  "homepage": "https://github.com/Mascuud143/GSK-kart#readme",
+  "devDependencies": {
+    "idle": "0.0.0"
+  }
+}

@@ -66,10 +66,12 @@ hr {
 
 .tilbakestill-visning button {
   background-color: #ff6b6b;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+  font-size: 21px;
+  margin: 20px;
 }
 
 .dette-skjer-denne-uken {
@@ -80,7 +82,7 @@ hr {
   padding-top: 10px;
 
   font-size: 15px;
-
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,13 +92,17 @@ hr {
   color: cornflowerblue;
   list-style-type: none;
   font-size: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .dette-skjer-denne-uken li {
   padding: 5px;
-  font-size: 21px;
+  font-size: 20px;
   padding: 5px;
-  font-size: 21px;
 
   display: flex;
 }
@@ -128,6 +134,19 @@ hr {
   flex-direction: column;
 }
 
+#finnansatte-btn {
+  border-radius: 5px;
+  margin: 5%;
+  background-color: cornflowerblue;
+  font-family: "Raleway";
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+
+  position: absolute;
+  left: 100px;
+}
+
 #gskbilde {
   width: 90%;
 }
@@ -143,7 +162,7 @@ hr {
   border-radius: 50px;
   position: absolute;
   top: 10%;
-  left: 30px;
+  left: 40px;
   right: 30px;
   background-color: #fff;
 
@@ -182,7 +201,7 @@ hr {
 .background-drop {
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: 110%;
   position: absolute;
   background-color: #000;
   opacity: 0.5;
@@ -242,8 +261,8 @@ hr {
   width: 150px;
   border-radius: 5px;
   position: absolute;
-  top: 100px;
-  left: 150px;
+  top: 120px;
+  left: 200px;
 }
 
 #gvgs-rom-logo {
